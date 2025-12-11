@@ -5,6 +5,9 @@
 .page-wrapper{
     background: #1c2023;
 }
+.header-wrapper-main{
+    padding: 20px;
+}
 .header-wrapper{
     background-image: url(/images/1153100\ 1.png);
     justify-self: end;
@@ -12,18 +15,26 @@
     height: 600px;
     padding-left: 50px;
     padding-top: 25px;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
 }
 .nav-burger{
     position: relative;
     top: 25px;
     left: 20px;
+    position: relative;
+    z-index: 2;
 }
+
 .nav-list{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     list-style: none;
     margin-left: 70px;
+    position: relative;
+    z-index: 2;
 }
 .nav-list-item{
    font-family: var(--font-family);
@@ -32,6 +43,8 @@ font-size: 14px;
 line-height: 193%;
 text-transform: uppercase;
 color: rgba(255, 255, 255, 0.5); 
+position: relative;
+z-index: 2;
 }
 .header-title{
     font-family: var(--font-family);
@@ -40,6 +53,8 @@ color: rgba(255, 255, 255, 0.5);
     line-height: 100%;
     color: #fff;
     width: 538px;
+    position: relative;
+    z-index: 2;
 }
 .header-desc{
     font-family: var(--second-family);
@@ -49,6 +64,8 @@ line-height: 150%;
 color: #a9c7c7;
 width: 543px;
 margin-top: 25px;
+position: relative;
+z-index: 2;
 }
 .header-btn{
     border-radius: 6px;
@@ -62,4 +79,51 @@ text-transform: uppercase;
 color: #fff;
 border: none;
 margin-top: 30px;
+z-index: 2;
+}
+.main-title{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+color: #fff;
+}
+.card-item-title{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+color: #fff;
+}
+.card-item-subtitle{
+   font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+color: #a9c7c7; 
+}
+.card-item-list-desc{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #8c96a0;
+}
+.card-item-price{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 19px;
+color: #fff;
+}
+.card-item-btn{
+    border-radius: 6px;
+width: 96px;
+height: 29px;
+background: #8856d9;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 13px;
+text-transform: uppercase;
+color: #fff;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
