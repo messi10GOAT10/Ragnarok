@@ -163,6 +163,10 @@ color: #8856d9;
    font-weight: 700;
 color: #ff4136; 
 }
+.dual-sence-title{
+    display: flex;
+    justify-self: center;
+}
 .dual-sence-price{
     font-family: var(--font-family);
 font-weight: 700;
@@ -183,4 +187,10 @@ border: none;
 .dual-sence-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+.dual-sence-poster{
+    width: 340px;
+    height: 309px;
 }
