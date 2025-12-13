@@ -2,29 +2,21 @@
     padding: 0;
     margin: 0;
 }
+body{
+     background: #1c2023;
+}
 .page-wrapper{
-    background: #1c2023;
 }
 .header-wrapper-main{
     padding: 20px;
-}
-.header-wrapper{
-    background-image: url(/images/1153100\ 1.png);
-    justify-self: end;
-    width: 1100px;
-    height: 600px;
-    padding-left: 50px;
-    padding-top: 25px;
-    position: absolute;
-    top: 0px;
-    z-index: 0;
+    background: url(./images/header-bg.png) no-repeat right/1289px 764px;
+    padding-bottom: 187px;
+    margin-bottom: 53px;
 }
 .nav-burger{
     position: relative;
     top: 25px;
     left: 20px;
-    position: relative;
-    z-index: 2;
 }
 
 .nav-list{
@@ -33,8 +25,6 @@
     column-gap: 20px;
     list-style: none;
     margin-left: 70px;
-    position: relative;
-    z-index: 2;
 }
 .nav-list-item{
    font-family: var(--font-family);
@@ -43,8 +33,6 @@ font-size: 14px;
 line-height: 193%;
 text-transform: uppercase;
 color: rgba(255, 255, 255, 0.5); 
-position: relative;
-z-index: 2;
 }
 .header-title{
     font-family: var(--font-family);
@@ -53,8 +41,7 @@ z-index: 2;
     line-height: 100%;
     color: #fff;
     width: 538px;
-    position: relative;
-    z-index: 2;
+    margin-top: 120px;
 }
 .header-desc{
     font-family: var(--second-family);
@@ -64,8 +51,6 @@ line-height: 150%;
 color: #a9c7c7;
 width: 543px;
 margin-top: 25px;
-position: relative;
-z-index: 2;
 }
 .header-btn{
     border-radius: 6px;
@@ -86,6 +71,7 @@ z-index: 2;
 font-weight: 600;
 font-size: 40px;
 color: #fff;
+margin-bottom: 34px;
 }
 .card-item-title{
     font-family: var(--font-family);
@@ -124,6 +110,44 @@ color: #fff;
 }
 .card-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 53px;
+}
+.card-container{
+    display: flex;
+    column-gap: 16px;
+}
+.card-item{
+    border-radius: 6px;
+    width: 316px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #141615 0%, #1c2023 100%);
+}
+.card-item-title {
+    margin: 20px 0 14px 0;
+    align-self: center;
+}
+.card-item-subtitle {
+    align-self: center;
+    margin-bottom: 32px;
+}
+.card-item-list {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    list-style: none;
+}
+.card-item-list-desc {
+}
+.card-item-price {
+    align-self: flex-end;
+    margin-bottom: 14px;
+}
+.card-item-btn {
+    align-self: flex-end;
 }
