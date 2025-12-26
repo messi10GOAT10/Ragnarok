@@ -235,10 +235,10 @@ body {
 }
 .explore-subtitle {
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 18px;
-text-align: center;
-color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
 }
 .explore-toggle {
   display: flex;
@@ -247,40 +247,40 @@ color: #fff;
 }
 .explore-toggle-version {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 14px;
-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 }
 .explore-toggle-box {
   border-radius: 12px;
-width: 50px;
-height: 20px;
-background: #30373f;
-display: flex;
-align-items: center;
-padding: 4px;
+  width: 50px;
+  height: 20px;
+  background: #30373f;
+  display: flex;
+  align-items: center;
+  padding: 4px;
 }
 .explore-toggle-box-circle {
   border-radius: 100%;
-background: #8856d9;
-width: 19px;
-height: 19px;
+  background: #8856d9;
+  width: 19px;
+  height: 19px;
 }
 .explore-price {
   font-family: var(--font-family);
-font-weight: 700;
-font-size: 20px;
-color: #fff;
-margin-top: 15px;
-text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 15px;
+  text-align: center;
 }
-.explore-card-container{
+.explore-card-container {
 }
 .explore-card {
   display: flex;
   align-items: center;
 }
-.subtitle-margin{
+.subtitle-margin {
   margin-top: 115px;
 }
 .explore-card-poster {
@@ -291,27 +291,157 @@ text-align: center;
   list-style: none;
 }
 .explore-card-params-box-setting {
-font-family: var(--font-family);
-font-weight: 400;
-font-size: 15px;
-line-height: 240%;
-color: #8856d9;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 240%;
+  color: #8856d9;
 }
 .pc {
-color: #fff;
+  color: #fff;
 }
 .explore-card-params-buy {
   border-radius: 6px;
+  width: 96px;
+  height: 29px;
+  background: #ff4136;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+}
+.ps {
+  color: #fff;
+}
+.swiper-card {
+  border-radius: 6px;
+  background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
+  width: 615px;
+  padding: 20px;
+}
+.swiper-card-name {
+  display: flex;
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 10px;
+text-transform: uppercase;
+color: #8856d9;
+margin-bottom: 7px;
+}
+.swiper-card-title {
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 19px;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 15px;
+}
+.swiper-card-mid-container{
+  display: flex;
+  column-gap: 24px;
+}
+.swiper-card-desc-container{
+  display: flex;
+  flex-direction: column;
+}
+.swiper-card-desc {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 142%;
+color: #d9d9d9;
+}
+.swiper-card-btn {
+  border-radius: 6px;
 width: 96px;
 height: 29px;
-background: #ff4136;
+background: #8c96a0;
 font-family: var(--font-family);
 font-weight: 500;
 font-size: 13px;
 text-transform: uppercase;
 color: #fff;
 border: none;
+align-self: flex-end;
 }
-.ps {
-  color: #fff;
+.FAQ-title{
+  text-align: center;
+}
+.FAQ-container-top{
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+}
+.FAQ-subtitle {
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 17px;
+text-align: center;
+color: #fff;
+text-align: start;
+display: flex;
+align-self: start;
+margin-bottom: 13px;
+}
+.FAQ-line {
+  background: #8856d9;
+  width: 903px;
+height: 2px;
+margin-bottom: 13px;
+}
+.FAQ-info {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: #fff;
+width: 800px;
+margin-bottom: 31px;
+}
+.FAQ-container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FAQ-list {
+  display: flex;
+  list-style: none;
+  column-gap: 22px;
+  margin-top: 156px;
+}
+.FAQ-list-item {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 169%;
+text-transform: uppercase;
+color: rgba(255, 255, 255, 0.5);
+text-align: left;
+}
+.FAQ-desc{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+text-align: center;
+color: #8c96a0;
+width: 825px;
+margin-top: 50px;
+}
+.FAQ-logo{
+  margin-top: 38px;
+}
+.FAQ-date{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #8c96a0;
+margin-top: 20px;
+}
+.FAQ-copyright{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #8c96a0;
+margin-top: 13px;
 }
