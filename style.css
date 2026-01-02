@@ -318,8 +318,9 @@ body {
 .swiper-card {
   border-radius: 6px;
   background: linear-gradient(180deg, #30373f 22.4%, #141615 100%);
-  width: 615px;
+  min-width: 620px;
   padding: 20px;
+  height: 320px;
 }
 .swiper-card-name {
   display: flex;
@@ -329,6 +330,7 @@ font-size: 10px;
 text-transform: uppercase;
 color: #8856d9;
 margin-bottom: 7px;
+justify-content: space-between;
 }
 .swiper-card-title {
   font-family: var(--font-family);
@@ -345,6 +347,7 @@ margin-bottom: 15px;
 .swiper-card-desc-container{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .swiper-card-desc {
   font-family: var(--font-family);
@@ -352,6 +355,11 @@ font-weight: 400;
 font-size: 12px;
 line-height: 142%;
 color: #d9d9d9;
+}
+.swiper-container{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
 }
 .swiper-card-btn {
   border-radius: 6px;
@@ -398,6 +406,7 @@ font-size: 14px;
 color: #fff;
 width: 800px;
 margin-bottom: 31px;
+position: relative;
 }
 .FAQ-container-bottom {
   display: flex;
@@ -444,4 +453,32 @@ font-weight: 400;
 font-size: 16px;
 color: #8c96a0;
 margin-top: 13px;
+}
+.content-container{
+  width: 903px;
+  display: flex;
+  justify-content: space-between;
+}
+.FAQ-button-text{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+color: #fff;
+position: absolute;
+left: 1182px;
+margin-top: 5px;
+z-index: 5;
+}
+.open-close{
+  width: 30px;
+height: 30px;
+  border-radius: 6px;
+background: #8c96a0;
+border: none;
+}
+.FAQ-bottom-bg{
+  position: absolute;
+  right: 200px;
+  z-index: -1;
 }
