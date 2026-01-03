@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
   },
-  slidesPerView:3,
+  slidesPerView: 3,
   // Navigation arrows
 
   // And if we need scrollbar
@@ -14,27 +14,28 @@ const swiper = new Swiper('.swiper', {
   },
 });
 const date = document.querySelectorAll('.swiper-card-date')
-let day,month,year,hour,minutes,seconds
+let day, month, year, hour, minutes, seconds
 setInterval(() => {
-    let currentDate = new Date()
-    day=currentDate.getDate()
-    month=currentDate.getMonth()
-    year=currentDate.getFullYear()
-    hour=currentDate.getHours()
-    minutes=currentDate.getMinutes()
-    seconds=currentDate.getSeconds()
-    date.forEach((item)=>{
-        item.textContent = `${hour}:${minutes}:${seconds}`
-    })
+  let currentDate = new Date()
+  day = currentDate.getDate()
+  month = currentDate.getMonth()
+  year = currentDate.getFullYear()
+  hour = currentDate.getHours()
+  minutes = currentDate.getMinutes()
+  seconds = currentDate.getSeconds()
+  date.forEach((item) => {
+    item.textContent = `${hour}:${minutes}:${seconds}`
+  })
 }, 1000);
-const faqBtn = document.querySelector('.open-close')
-const buttonText = document.querySelector('.FAQ-button-text')
+const faqBtn = document.querySelectorAll('.open-close')
 const faqInfo = document.querySelector('.Faq-info')
-if (buttonText.style.rotate == '0deg') {
-  faqInfo.style.zIndex = '-1';
-} else {
-  
-}
-faqBtn.addEventListener('click', function(){
-    buttonText.style.rotate = '45deg';
+// if (buttonText.style.rotate == '0deg') {
+//   faqInfo.style.zIndex = '-1';
+// } else {
+
+// }
+faqBtn.forEach(function (element) {
+  element.addEventListener('click', function () {
+     element.children[0].classList.toggle('active');
+  })
 })
