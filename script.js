@@ -39,3 +39,24 @@ faqBtn.forEach(function (element) {
      element.children[0].classList.toggle('active');
   })
 })
+const navBurger = document.querySelector('.nav-burger')
+const navList = document.querySelector('.nav-list')
+navBurger.addEventListener('click', function(){
+  navList.classList.toggle('burger-hidden')
+})
+
+// modal
+
+const overlay = document.querySelector('.overlay')
+const modalClose = document.querySelector('.modal-close')
+const cardBtn = document.querySelectorAll('.card-item-btn')
+const modalPrice = document.querySelector('.modal-price')
+cardBtn.forEach(function(element){
+  element.addEventListener('click', function(){
+    modalPrice.textContent = element.previousElementSibling.textContent
+    overlay.classList.add('overlay-active')
+  })
+})
+modalClose.addEventListener('click', function(){
+  overlay.classList.remove('overlay-active')
+})
