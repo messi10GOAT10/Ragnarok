@@ -464,6 +464,7 @@ body {
   display: flex;
   align-items: center;
   padding: 4px;
+  cursor: pointer;
 }
 
 .explore-toggle-box-circle {
@@ -471,6 +472,7 @@ body {
   background: #8856d9;
   width: 19px;
   height: 19px;
+  transition: all .4s;
 }
 
 .explore-price {
@@ -528,6 +530,10 @@ body {
 
 .ps {
   color: #fff;
+}
+
+.switcher-active{
+  translate: 30px;
 }
 
 .swiper-card {
