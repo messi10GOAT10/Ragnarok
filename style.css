@@ -180,6 +180,7 @@ body {
   position: relative;
   top: 25px;
   left: 20px;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -188,9 +189,10 @@ body {
   column-gap: 20px;
   list-style: none;
   margin-left: 70px;
+  transition: all .5s;
 }
 .burger-hidden{
-  display: none;
+  translate: -150%;
 }
 
 .nav-list-item {
@@ -388,6 +390,19 @@ body {
 .dual-sence-poster {
   width: 340px;
   height: 309px;
+  animation: moveController infinite 4s ;
+}
+
+@keyframes moveController {
+  0%{
+    translate: 0 0px;
+  }
+  50%{
+    translate: 0 -30px;
+  }
+  100%{
+    translate: 0 0px;
+  }
 }
 
 .dual-sence-bottom-container {
