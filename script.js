@@ -28,22 +28,21 @@ setInterval(() => {
   })
 }, 1000);
 const faqBtn = document.querySelectorAll('.open-close')
-const faqInfo = document.querySelector('.Faq-info')
-// if (buttonText.style.rotate == '0deg') {
-//   faqInfo.style.zIndex = '-1';
-// } else {
+const faqInfo = document.querySelector('.FAQ-info')
 
-// }
 faqBtn.forEach(function (element) {
   element.addEventListener('click', function () {
      element.children[0].classList.toggle('active');
+     faqInfo.classList.toggle('info-unactive')
   })
 })
+
 const navBurger = document.querySelector('.nav-burger')
 const navList = document.querySelector('.nav-list')
 navBurger.addEventListener('click', function(){
   navList.classList.toggle('burger-hidden')
 })
+
 
 // modal
 

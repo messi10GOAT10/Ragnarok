@@ -20,11 +20,53 @@
 }
 .modal {
   background: white;
+  z-index: 4;
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 420px;
+  align-items: center;
+  row-gap: 16px;
+  width: 470px;
+  height: 530px;
+  padding: 20px;
+  border-radius: 12px;
   position: relative;
+  background: linear-gradient(180deg, rgba(79, 96, 152, 0) 63.61%, #30373f 100%);
+  background: linear-gradient(180deg, #30373f 39.51%, #4f6098 99.82%);
+  background: linear-gradient(180deg, #30373f 0%, #000 99.82%);
+}
+.modal-bottom-container{
+  display: flex;
+  column-gap: 200px;
+}
+.modal-btn{
+  background: #8856d9;
+  border-radius: 6px;
+width: 406px;
+height: 39px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 15px;
+text-transform: uppercase;
+color: #fff;
+}
+.modal-info{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 10px;
+color: #d9d9d9;
+width: 407px;
+}
+.button-title{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+text-align: center;
+color: #fff;
+}
+.modal-img{
+  position: absolute;
+  top: 85px;
+  z-index: -1;
 }
 .modal-close {
   position: absolute;
@@ -34,6 +76,94 @@
   font-size: 25px;
 }
 .modal-price {
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+text-align: center;
+color: #fff;
+}
+.modal-title {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+color: #8856d9;
+}
+.modal-subtitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+font-size: 15px;
+line-height: 167%;
+text-align: center;
+color: #fff;
+}
+.modal-credit-card {
+}
+.input-title {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 10px;
+text-transform: uppercase;
+text-align: start;
+color: #fff;
+}
+.modal-credit-card-input {
+  border-radius: 6px;
+width: 406px;
+height: 44px;
+background: #30373f;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-transform: uppercase;
+color: #d9d9d9;
+border: none;
+}
+.modal-input-middle-container{
+  display: flex;
+  column-gap: 26px;
+}
+.modal-expire {
+}
+.modal-expire-input {
+  border-radius: 6px;
+width: 190px;
+height: 44px;
+background: #30373f;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-transform: uppercase;
+color: #d9d9d9;
+border: none;
+}
+.modal-ccv {
+}
+.modal-ccv-input {
+  border-radius: 6px;
+width: 190px;
+height: 44px;
+background: #30373f;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-transform: uppercase;
+color: #d9d9d9;
+border: none;
+}
+.modal-instant {
+}
+.modal-instant-input {
+  border-radius: 6px;
+width: 406px;
+height: 44px;
+  background: #30373f;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-transform: uppercase;
+color: #d9d9d9;
+border: none;
 }
 body {
   background: #1c2023;
@@ -504,6 +634,9 @@ body {
   width: 800px;
   margin-bottom: 31px;
   position: relative;
+}
+.info-unactive{
+  display: none;
 }
 
 .FAQ-container-bottom {
