@@ -438,6 +438,7 @@ body {
   height: 33px;
   background: #30373f;
   border: none;
+  cursor: pointer;
 }
 
 .explore-wrapper {
@@ -472,13 +473,13 @@ body {
 }
 
 .explore-toggle-box {
-  border-radius: 12px;
+  border-radius: 15px;
   width: 50px;
   height: 20px;
   background: #30373f;
   display: flex;
   align-items: center;
-  padding: 4px;
+  padding: 5px;
   cursor: pointer;
 }
 

@@ -49,12 +49,16 @@ navBurger.addEventListener('click', function(){
 const overlay = document.querySelector('.overlay')
 const modalClose = document.querySelector('.modal-close')
 const cardBtn = document.querySelectorAll('.card-item-btn')
+const headerBtn = document.querySelector('.header-btn')
 const modalPrice = document.querySelector('.modal-price')
 cardBtn.forEach(function(element){
   element.addEventListener('click', function(){
     modalPrice.textContent = element.previousElementSibling.textContent
     overlay.classList.add('overlay-active')
   })
+})
+headerBtn.addEventListener('click', function(){
+    overlay.classList.add('overlay-active')
 })
 modalClose.addEventListener('click', function(){
   overlay.classList.remove('overlay-active')
