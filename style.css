@@ -512,6 +512,9 @@ body {
 }
 
 .explore-card-poster {}
+.explore-card-poster-active{
+  margin-left: 62.5px;
+}
 
 .explore-card-params {}
 
